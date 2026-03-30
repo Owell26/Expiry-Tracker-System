@@ -1,3 +1,10 @@
+<?php 
+date_default_timezone_set('Asia/Manila');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +20,6 @@
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
-<?php 
-date_default_timezone_set('Asia/Manila');
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+<?php
 include 'navbar.php';
 ?>

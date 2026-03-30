@@ -8,12 +8,9 @@ if (isset($_SESSION['alert'])) {
     $type = $alert['type'] ?? 'info';
     $title = $alert['title'] ?? '';
     $message = $alert['message'] ?? '';
-    $redirect = $alert['redirect'] ?? null; 
+    $redirect = $alert['redirect'] ?? null;
     ?>
-
-    <!-- SweetAlert2 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         Swal.fire({
             icon: '<?= $type ?>',
@@ -29,7 +26,6 @@ if (isset($_SESSION['alert'])) {
             <?php } ?>
         });
     </script>
-
 <?php
     unset($_SESSION['alert']);
 }
