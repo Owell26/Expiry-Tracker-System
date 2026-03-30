@@ -12,4 +12,4 @@ mysqli_real_connect($conn, $host, $username, $password, $database, $port, NULL, 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-?>
+?>  
